@@ -29,6 +29,6 @@ export class MembersService {
   }
 
   remove(id: number) {
-    return `This action removes a #${id} member`;
+   this.memberRepository.delete(id);
   }
 }
